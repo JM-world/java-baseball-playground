@@ -26,9 +26,21 @@ public class InputValidator {
         }
     }
 
-    public static void validateAll(String input) {
-        validateNoStringAndLength(input);
+    // 추가 게임 진행여부 값이 1 또는 2인지 확인한다.
+    private static void validateOneOrTwo(String input) {
+        if (!input.equals("1") && !input.equals("2")) {
+            throw new IllegalArgumentException("1 또는 2가 아닙니다.");
+        }
+    }
+
+    public static void validateFirstGameAll(String input) {
+        validateNoStringAndLength(input, 3);
         validateNoContainsZero(input);
         validateNoDuplicate(input);
+    }
+
+    public static void validateNextGameAll(String input) {
+        validateOneOrTwo(input);
+        validateNoStringAndLength(input, 1);
     }
 }
