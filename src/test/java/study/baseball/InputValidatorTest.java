@@ -1,4 +1,4 @@
-package baseball;
+package study.baseball;
 
 import baseball.input.InputValidator;
 import org.junit.jupiter.api.DisplayName;
