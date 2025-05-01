@@ -19,10 +19,10 @@ public class InputValidator {
         }
     }
 
-    // 숫자 외의 문자가 포함되어 있지 않은지, 3자리 숫자인지 확인한다.
-    private static void validateNoStringAndLength(String input) {
-        if (!input.matches("\\d{3}")) {
-            throw new IllegalArgumentException("3자리의 숫자가 아닙니다.");
+    // 숫자 외의 문자가 포함되어 있지 않은지, N자리 숫자인지 확인한다.
+    private static void validateNoStringAndLength(String input, int length) {
+        if (!input.matches("\\d{" + length +  "}")) {
+            throw new IllegalArgumentException(length + "자리의 숫자가 아닙니다.");
         }
     }
 
