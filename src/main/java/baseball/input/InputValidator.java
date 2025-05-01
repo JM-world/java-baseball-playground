@@ -41,6 +41,5 @@ public class InputValidator {
 
     public static void validateNextGameAll(String input) {
         validateOneOrTwo(input);
-        validateNoStringAndLength(input, 1);
     }
 }
