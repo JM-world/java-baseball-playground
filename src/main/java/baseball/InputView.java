@@ -7,7 +7,7 @@ public class InputView {
     }
 
     public static void invalidNumberInfo() {
-        System.out.print("유효하지 않은 값입니다.");
+        System.out.println("유효하지 않은 값입니다.");
     }
 
     public static void restartInfo() {
