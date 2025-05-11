@@ -15,6 +15,18 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class NumberValidationUtilsTest {
 
+    // 플레이어 게임 재시작 입력값 검증
+    @Test
+    @DisplayName("플레이어는 게임 재시작을 위해 1 또는 2를 입력한다.")
+    void 숫자_1_또는_2입력() {
+        assertThat(NumberValidationUtils.validateDigitRange1or2("1")).isTrue();
+        assertThat(NumberValidationUtils.validateDigitRange1or2("2")).isTrue();
+        assertThat(NumberValidationUtils.validateDigitRange1or2("3")).isFalse();
+        assertThat(NumberValidationUtils.validateDigitRange1or2("3a")).isFalse();
+        assertThat(NumberValidationUtils.validateDigitRange1or2("n")).isFalse();
+        assertThat(NumberValidationUtils.validateDigitRange1or2(" ")).isFalse();
+    }
+
     // 플레이어 입력값 검증 전체
     @ParameterizedTest
     @ValueSource(strings = {"123", "456", "789"})
