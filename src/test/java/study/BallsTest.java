@@ -26,7 +26,7 @@ public class BallsTest {
     void play_3strike() {
         Balls userBalls = new Balls(Arrays.asList(1, 2, 3));
         PlayResult result = computerBalls.play(userBalls);
-        assertThat(result.isCorrect()).isTrue();
+        assertThat(result.isThreeStrike()).isTrue();
     }
 
     @Test
