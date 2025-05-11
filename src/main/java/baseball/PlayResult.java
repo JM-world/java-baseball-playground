@@ -15,15 +15,31 @@ public class PlayResult {
 
     public void report(BallStatus status) {
         if (status.isStrike()) {
-            this.strike++;
+            strike++;
         }
 
         if (status.isBall()) {
-            this.ball++;
+            ball++;
         }
     }
 
-    public boolean isCorrect() {
+    public boolean isThreeStrike() {
         return strike == 3;
+    }
+
+    public String getMessage() {
+        if (strike == 0 && ball == 0) {
+            return "낫싱";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        if (strike > 0) {
+            sb.append(strike).append(" 스트라이크 ");
+        }
+        if (ball > 0) {
+            sb.append(ball).append(" 볼");
+        }
+
+        return sb.toString().trim();
     }
 }
