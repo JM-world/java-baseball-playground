@@ -1,4 +1,6 @@
-package baseball;
+package baseball.utils;
+
+import baseball.constants.DigitConstants;
 
 import java.util.HashSet;
 import java.util.List;

@@ -1,4 +1,12 @@
-package baseball;
+package baseball.controller;
+
+import baseball.domain.Balls;
+import baseball.domain.PlayResult;
+import baseball.domain.RandomNumberGenerator;
+import baseball.input.InputPlayerNumber;
+import baseball.utils.ParseUtils;
+import baseball.view.InputView;
+import baseball.view.OutputView;
 
 public class GameController {
 

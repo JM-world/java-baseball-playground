@@ -1,4 +1,7 @@
-package baseball;
+package baseball.input;
+
+import baseball.utils.NumberValidationUtils;
+import baseball.view.InputView;
 
 import java.util.Scanner;
 

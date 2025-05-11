@@ -1,7 +1,7 @@
 package study;
 
-import baseball.Ball;
-import baseball.BallStatus;
+import baseball.domain.Ball;
+import baseball.domain.BallStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

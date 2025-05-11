@@ -1,7 +1,7 @@
 package study;
 
-import baseball.NumberValidationUtils;
-import baseball.RandomNumberGenerator;
+import baseball.utils.NumberValidationUtils;
+import baseball.domain.RandomNumberGenerator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
