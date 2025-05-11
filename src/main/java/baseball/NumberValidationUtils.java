@@ -43,4 +43,9 @@ public class NumberValidationUtils {
                 .distinct()
                 .count() == numbers.length();
     }
+
+    // (플레이어 검증) 1 또는 2의 값인지 확인
+    public static boolean validateDigitRange1or2(String number) {
+        return number.matches("^[1-2]$");
+    }
 }
