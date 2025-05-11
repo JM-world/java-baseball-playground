@@ -32,6 +32,10 @@ public class PlayResult {
             return "낫싱";
         }
 
+        if (isThreeStrike()) {
+            return "3개의 숫자를 모두 맞히셨습니다! 게임 종료";
+        }
+
         StringBuilder sb = new StringBuilder();
         if (strike > 0) {
             sb.append(strike).append(" 스트라이크 ");
